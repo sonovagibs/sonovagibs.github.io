@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title id="my-website">My Website</title>
+        <style> // allows for css manipulation of html elements
+
+        body {
+            background-color: rgb(20, 30, 50); assigns color to background
+            font-size: 20px; // sets font size to 20 pixels
+            line-height: 1.5em; // makes line between words 1.5x the size of the words
+            text-align: center; // aligns text to the center
+            text-decoration: underline; // underlines
+        }
+        h1 {
+            color: rgb(0, 100, 255); // assigns color to text
+            font-size: 2em; // scales heading font size proportionally to body font size using 'em'
+            font-weight: bold; // formats the text to bold
+            font-style: italic; // italicises the text
+            // can replace all of these properties by just using "font: italic 2em bold;" but could be confusing
+        }
+        #website-purpose{
+            color: rgb(25, 50, 150);
+            font-family: "Helvetica", sans-serif; // assigns font family Helvetica if destination computer has that font, otherwise defaults to sans-serif
+        }
+        .heading-background{
+            background-color: rgb(20, 50, 200);
+        }
+
+        </style>
+    <body>
+        <img src="https://i.imgur.com/qZaSG6v.png" alt="Stylised image of two falcon 9 boosters landing with SpaceX logo"> // calls an image from an online source and gives an alternate description
+        <h1 class="heading-background">My First Website</h1> // a header that shares the class "heading-background" with other headers
+        <p id="website-purpose">The purpose of this site is to <br> // a paragraph with id "website-purpose" that can be referenced for style manipulation
+        demonstrate my abilities with HTML/CSS <br> // break line, otherwise the paragraph would be one single line without a br
+        and to highlight my interests</p>
+        <h2 class="heading-background">Website Goals</h2>
+        <p id="goals-of-site">The goals of the site include:</p>
+        <ul> // unorganised (No numbers) list
+            <li></li> // list item
+        </ul>
+
+        <table> // creates a table
+            <thead> // formats the headers as titles for the columns
+                <tr> // creates a row
+                    <th></th> // creates a cell for a header
+                </tr>
+            </thead>
+            <tbody> // formats the information as entry's under the above titles
+                <tr> // creates a row
+                    <td></td> // tabular data, creates a cell for information
+                </tr>
+            </tbody>
+        </table>
+
+        <a href="#my-website">Back to Top</a> // references an id my-website to link to when "Back to Top" is clicked
+    </body>
+    </head>
+</html>
